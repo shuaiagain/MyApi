@@ -1,0 +1,4 @@
+1.ado.net
+https://www.cnblogs.com/liuhaorain/archive/2012/02/06/2340409.html
+2.数据库连接池
+https://www.cnblogs.com/liuhaorain/archive/2012/02/19/2353110.html

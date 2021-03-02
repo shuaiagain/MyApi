@@ -1,0 +1,77 @@
+1.类
+	1.1类的构造函数
+		
+
+		
+	1.2类的初始化顺序
+		（1）子类静态字段
+		（2）子类静态构造函数
+		（3）子类非静态字段
+		（4）父类静态字段
+		（5）父类静态构造函数
+		（6）父类非静态字段
+		（7）父类构造函数
+		（8）子类构造函数
+
+	1.3类、成员的访问级别
+				1.3.1 C# 方法默认访问级别 : private  
+				1.3.2 类默认访问级别 : internal  
+				1.3.3 命名空间下的元素的默认访问修饰符
+					public : 同一程序集的其他任何代码或引用该程序集的其他程序集都可以访问该类型或成员。
+					internal : 同一程序集中的任何代码都可以访问该类型或成员，但其他程序集不可以访问。 
+
+				1.3.4 各类型中的成员的默认访问修饰符
+					剩下的修饰符主要是正对继承这个语言特性的,拥有继承的类型有两个类(class)和接口(interface)。public,internal同样可以用于类型成员。
+					private : 同一类和结构的代码可以访问该类型和成员。
+					protected : 同一类和派生(继承特性)类中的代码可以访问该类型和成员。
+					protected internal :  同一程序集中的任何代码或其他程序集中的任何派生类都可以访问该类型或成员。
+
+				1.3.5 MSDN提示 ：
+					1.) 派生类的可访问性不能高于其基类型。换句话说，不能有从内部类 A 派生的公共类 B。如果允许这种情况，将会使 A 成为公共类，因为 A 的所有受保护的成员或内部成员都可以从派生类访问。 
+					2.) 成员的可访问性决不能高于其包含类型的可访问性。 
+					3.) 可以使用五种访问类型中的任何一种来声明类成员（包括嵌套的类和结构）。 
+
+				1.3.6 接口(interface)
+					接口成员访问修饰符默认为public,且不能显示使用访问修饰符。
+
+				1.3.7 类(class)
+					构造函数默认为public访问修饰符。
+					析构函数不能显示使用访问修饰符且默认为private访问修饰符。 
+					类的成员默认访问修饰符为private; 
+
+				1.3.8 枚举(enum)
+					枚举类型成员默认为public访问修饰符，且不能显示使用修饰符。
+
+				1.3.9 结构(struct) 
+					结构成员默认为private修饰符。 
+					结构成员无法声明为protected成员，因为结构不支持继承。 
+
+				1.3.10 嵌套类型
+					嵌套类型的默认访问修饰符为private。 和类，结构的成员默认访问类型一致。
+		
+	1.4抽象类，接口
+	https://www.cnblogs.com/sunzhenyong/p/3814910.html
+	https://www.cnblogs.com/solan/archive/2012/08/01/CSharp06.html
+
+	1.5属性-字段-自动属性
+
+
+2.关键字
+	const,static,readonly
+	ref,out
+	params
+
+3.单例模式
+https://www.cnblogs.com/TomXu/archive/2011/12/19/2291448.html
+
+4.await,async
+https://www.cnblogs.com/huangxincheng/p/13558006.html
+
+5.委托
+https://www.cnblogs.com/jackson0714/p/5111347.html
+
+6.线程
+https://www.cnblogs.com/JimmyZheng/archive/2012/06/10/2543143.html
+
+7.orm
+https://www.cnblogs.com/farb/p/IntroductionToEF.html
