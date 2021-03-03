@@ -54,14 +54,26 @@
 	https://www.cnblogs.com/solan/archive/2012/08/01/CSharp06.html
 
 	1.5属性-字段-自动属性
-
+	
+	1.6反射
 
 2.关键字
-	const,static,readonly
-	ref,out
-	params
+	2.1 const,static,readonly
+	2.2 ref,out
+		2.2.1 CLR默认所有方法参数都传值。传递引用类型的对象时，对象引用(或者说指向对象的指针)被传给方法。
+		注意引用(或指针)本身是传值的，意味着方法能修改对象，而调用这能看到这些修改。对于值类型的实例，
+		传给方法的是实例的一个副本，意味着方法将获得它专用的一个值类型实例副本，调用者中的实例不受影响。
+		2.2.2 CLR允许以传引用而非传值的方式传递参数。C#用关键字out或ref支持这个功能。
+	
+	2.3 as,is
+	2.4 params，
+	2.5 equals,==差别，重写GetHashCode方法（重写Equals方法必须重写GetHashCode方法，否则发生警告）
+		  https://www.cnblogs.com/xiaochen-vip8/p/5506478.html
+	2.6 lock
+		 https://www.cnblogs.com/edisonchou/p/4848131.html
 
 3.单例模式
+ （1）线程安全吗？
 https://www.cnblogs.com/TomXu/archive/2011/12/19/2291448.html
 
 4.await,async

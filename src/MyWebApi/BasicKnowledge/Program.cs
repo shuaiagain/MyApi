@@ -52,6 +52,15 @@ namespace BasicKnowledge
             //AutoProperty autoP = new AutoProperty();
             //autoP.printHandField();
 
+            //RefOut ro = new RefOut();
+            //ro.TestValueRef();
+            //ro.TestObjRef();
+
+            //RefOut ro = new RefOut();
+            //ro.TestValueOut();
+
+            As_Is asIs = new As_Is();
+            asIs.ShowAs();
         }
     }
 }
