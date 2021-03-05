@@ -49,6 +49,8 @@
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
     <Compile Include="Example\RefOut.cs" />
+    <Compile Include="Example\StringBuilderString.cs" />
+    <Compile Include="Example\StringEmpty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Example\TaskBasicOperate.cs" />
     <Compile Include="Example\ThreeTaskOperate.cs" />

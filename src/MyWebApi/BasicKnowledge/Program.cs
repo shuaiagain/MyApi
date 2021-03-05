@@ -59,8 +59,22 @@ namespace BasicKnowledge
             //RefOut ro = new RefOut();
             //ro.TestValueOut();
 
-            As_Is asIs = new As_Is();
-            asIs.ShowAs();
+            //As_Is asIs = new As_Is();
+            //asIs.ShowAs();
+
+            //ConstReadOnly ro = new ConstReadOnly();
+            //ro.Print();
+            //ConstReadOnly roOne = new ConstReadOnly();
+            //roOne.Print();
+
+            //StringEmpty se = new StringEmpty();
+            //se.Print();
+
+            //StringBuilderString sb = new StringBuilderString();
+            //sb.Print();
+
+            StringEmpty se = new StringEmpty();
+            se.TypeSize();
         }
     }
 }
