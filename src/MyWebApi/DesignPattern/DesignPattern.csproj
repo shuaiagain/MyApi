@@ -42,6 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dto\DesignPrincipleDto.cs" />
+    <Compile Include="Dto\SinglePatternLazyDto.cs" />
+    <Compile Include="Dto\SinglePatternHungryDto.cs" />
+    <Compile Include="Example\SinglePattern.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -49,8 +53,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Doc\" />
-    <Folder Include="Dto\" />
+    <ProjectReference Include="..\DtoLib\DtoLib.csproj">
+      <Project>{6195A31F-65BB-4948-862F-1B276F1E3E6E}</Project>
+      <Name>DtoLib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Doc\1.DesignPrinciple.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

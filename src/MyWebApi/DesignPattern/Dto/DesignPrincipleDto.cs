@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace DesignPattern.Dto
 {
-    public class SinglePatternDto
+    public class DesignPrincipleDto
     {
-
     }
 }
