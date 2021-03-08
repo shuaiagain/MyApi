@@ -12,7 +12,7 @@ namespace DesignPattern.Dto
     public class SinglePatternLazyDto
     {
         //用于保持实例
-        volatile private static SinglePatternLazyDto uniqueInstance;
+         private static volatile SinglePatternLazyDto uniqueInstance;
         //用于加锁
         private static readonly object locker;
 
