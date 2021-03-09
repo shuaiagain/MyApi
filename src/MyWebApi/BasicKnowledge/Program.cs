@@ -70,11 +70,11 @@ namespace BasicKnowledge
             //StringEmpty se = new StringEmpty();
             //se.Print();
 
-            //StringBuilderString sb = new StringBuilderString();
-            //sb.Print();
+            StringBuilderString sb = new StringBuilderString();
+            sb.Print();
 
-            StringEmpty se = new StringEmpty();
-            se.TypeSize();
+            //StringEmpty se = new StringEmpty();
+            //se.TypeSize();
         }
     }
 }

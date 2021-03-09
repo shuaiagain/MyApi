@@ -52,6 +52,7 @@
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
     <Compile Include="Example\StringEmpty.cs" />
+    <Compile Include="Example\TypeSafe.cs" />
     <Compile Include="Example\VolatileYield.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Example\TaskBasicOperate.cs" />
