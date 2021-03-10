@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Example\AbstractInterface.cs" />
+    <Compile Include="Example\AnonymousDelegate.cs" />
     <Compile Include="Example\As_Is.cs" />
     <Compile Include="Example\AutoProperty.cs" />
     <Compile Include="Example\ClassInitOrder.cs" />
@@ -48,6 +49,7 @@
     <Compile Include="Dto\ConstReadOnlyDTO.cs" />
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
+    <Compile Include="Example\EnumType.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
