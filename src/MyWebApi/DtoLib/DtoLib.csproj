@@ -50,6 +50,7 @@
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
     <Compile Include="Example\EnumType.cs" />
+    <Compile Include="Example\ExpressionTree.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
