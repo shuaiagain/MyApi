@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,8 +51,10 @@
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
     <Compile Include="Example\EnumType.cs" />
+    <Compile Include="Example\EqualsGetHashCode.cs" />
     <Compile Include="Example\ExpressionTree.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
+    <Compile Include="Example\PointerType.cs" />
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
     <Compile Include="Example\StringEmpty.cs" />
@@ -67,11 +70,18 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Doc\Const_ReadOnly_Static关键字.txt" />
+    <Content Include="Doc\Database\2.约束.sql" />
+    <Content Include="Doc\Database\3.1事务.sql" />
+    <Content Include="Doc\Database\3.0事务.sql" />
+    <Content Include="Doc\Database\table\dbo.Student.Table.sql" />
+    <Content Include="Doc\Database\table\dbo.Subjects.Table.sql" />
+    <Content Include="Doc\Database\table\dbo.SubjectScore.Table.sql" />
     <Content Include="Doc\http协议-1.txt" />
+    <Content Include="Doc\pointer-reference.txt" />
     <Content Include="Doc\数据库-1.txt" />
     <Content Include="Doc\知识点-1.txt" />
     <Content Include="Doc\设计模式-1.txt" />
-    <Content Include="Doc\各种join-1.sql" />
+    <Content Include="Doc\Database\1.各种join-1.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

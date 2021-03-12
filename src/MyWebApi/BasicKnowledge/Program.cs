@@ -78,6 +78,9 @@ namespace BasicKnowledge
 
             //AnonymousDelegate an = new AnonymousDelegate();
             //an.Print();
+
+            //EqualsGetHashCode.Print();
+            PointerType.Print();
         }
     }
 }
