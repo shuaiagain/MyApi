@@ -69,6 +69,7 @@
 	2.4 params，
 	2.5 equals,==差别，重写GetHashCode方法（重写Equals方法必须重写GetHashCode方法，否则发生警告）
 		  https://www.cnblogs.com/xiaochen-vip8/p/5506478.html
+		  https://www.cnblogs.com/changbaishan/p/10579021.html
 	2.6 lock
 		 https://www.cnblogs.com/edisonchou/p/4848131.html
 

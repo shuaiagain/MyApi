@@ -48,8 +48,10 @@
     <Compile Include="Example\ClassInitOrder.cs" />
     <Compile Include="Example\ConstReadOnly.cs" />
     <Compile Include="Dto\ConstReadOnlyDTO.cs" />
+    <Compile Include="Example\CovariantInversion.cs" />
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
+    <Compile Include="Example\DelegateEvent.cs" />
     <Compile Include="Example\EnumType.cs" />
     <Compile Include="Example\EqualsGetHashCode.cs" />
     <Compile Include="Example\ExpressionTree.cs" />

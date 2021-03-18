@@ -48,10 +48,23 @@ namespace DtoLib.Example
             MyActionB<int, string> aa = p => p.ToString();
         }
 
+        private void PrintC()
+        {
+            MyActionA<int> a = (arg) => { Console.WriteLine("第一个：{0} ", arg); };
+            a += (arg) => { Console.WriteLine("第二个：{0} ", arg); };
+            a += (arg) => { Console.WriteLine("第三个：{0} ", arg); };
+            a += (arg) => { Console.WriteLine("第四个：{0} ", arg); };
+            a += PrintA;
+            a(1);
+            a.GetInvocationList();
+        }
+
+
         public void Print()
         {
             //PrintAct();
-            PrintFun();
+            //PrintFun();
+            PrintC();
         }
 
 
