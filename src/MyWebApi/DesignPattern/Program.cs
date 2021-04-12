@@ -19,12 +19,14 @@ namespace DesignPattern
             //InterLockedParallel.Print1();
 
             #region 简单工厂模式
-            FoodDto food = SimpleFactoryDto.CreateFood("FoodA");
-            food.Print();
+            //FoodDto food = SimpleFactoryDto.CreateFood("FoodA");
+            //food.Print();
 
-            FoodDto foodb = SimpleFactoryDto.CreateFood("FoodB");
-            foodb.Print();
+            //FoodDto foodb = SimpleFactoryDto.CreateFood("FoodB");
+            //foodb.Print();
             #endregion
+
+            ArrayList_List.Copy();
         }
     }
 }

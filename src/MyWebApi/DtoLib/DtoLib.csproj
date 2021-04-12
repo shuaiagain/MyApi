@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Example\AbstractInterface.cs" />
     <Compile Include="Example\AnonymousDelegate.cs" />
+    <Compile Include="Example\ArrayList_List.cs" />
     <Compile Include="Example\As_Is.cs" />
     <Compile Include="Example\AutoProperty.cs" />
     <Compile Include="Example\ClassInitOrder.cs" />
