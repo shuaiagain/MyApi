@@ -50,12 +50,14 @@
     <Compile Include="Example\ConstReadOnly.cs" />
     <Compile Include="Dto\ConstReadOnlyDTO.cs" />
     <Compile Include="Example\CovariantInversion.cs" />
+    <Compile Include="Example\DefaultExt.cs" />
     <Compile Include="Example\Delegate.cs" />
     <Compile Include="Dto\OneDto.cs" />
     <Compile Include="Example\DelegateEvent.cs" />
     <Compile Include="Example\EnumType.cs" />
     <Compile Include="Example\EqualsGetHashCode.cs" />
     <Compile Include="Example\ExpressionTree.cs" />
+    <Compile Include="Example\IEnumeratorExt.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\PointerType.cs" />
     <Compile Include="Example\RefOut.cs" />
@@ -80,6 +82,7 @@
     <Content Include="Doc\Database\table\dbo.Subjects.Table.sql" />
     <Content Include="Doc\Database\table\dbo.SubjectScore.Table.sql" />
     <Content Include="Doc\http协议-1.txt" />
+    <Content Include="Doc\知识点-2.txt" />
     <Content Include="Doc\pointer-reference.txt" />
     <Content Include="Doc\数据库-1.txt" />
     <Content Include="Doc\知识点-1.txt" />

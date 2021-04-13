@@ -88,3 +88,7 @@ https://www.cnblogs.com/JimmyZheng/archive/2012/06/10/2543143.html
 
 7.orm
 https://www.cnblogs.com/farb/p/IntroductionToEF.html
+
+8.asp.net http请求管道
+https://www.cnblogs.com/refactor/archive/2012/07/06/2568742.html
+https://blog.csdn.net/overmaker/article/details/2096859

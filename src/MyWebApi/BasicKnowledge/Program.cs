@@ -76,11 +76,17 @@ namespace BasicKnowledge
             //StringEmpty se = new StringEmpty();
             //se.TypeSize();
 
-            AnonymousDelegate an = new AnonymousDelegate();
-            an.Print();
+            //AnonymousDelegate an = new AnonymousDelegate();
+            //an.Print();
 
             //EqualsGetHashCode.Print();
             //PointerType.Print();
+
+            //DefaultExt.Print();
+
+            //IEnumeratorExt.Print();
+
+            ExpressionTree.Print();
         }
     }
 }
