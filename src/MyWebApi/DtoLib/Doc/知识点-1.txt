@@ -76,15 +76,25 @@
 3.单例模式
  （1）线程安全吗？
 https://www.cnblogs.com/TomXu/archive/2011/12/19/2291448.html
+https://www.cnblogs.com/zhili/p/SingletonPatterm.html
 
 4.await,async
 https://www.cnblogs.com/huangxincheng/p/13558006.html
+https://www.cnblogs.com/ryzen/p/13938188.html
+https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
 
 5.委托
 https://www.cnblogs.com/jackson0714/p/5111347.html
 
 6.线程
 https://www.cnblogs.com/JimmyZheng/archive/2012/06/10/2543143.html
+https://www.cnblogs.com/zhili/category/385032.html
+https://www.cnblogs.com/yunfeifei/p/4122084.html
+
+	6.1前台线程和后台线程的区别
+		(1)所有前台线程结束，应用程序才会结束
+		(2)所有前台线程结束后，后台线程会自动结束
+		(3)前台线程执行完毕后，不用管后台线程是否结束，应用程序可以直接退出
 
 7.orm
 https://www.cnblogs.com/farb/p/IntroductionToEF.html

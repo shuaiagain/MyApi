@@ -63,6 +63,7 @@
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
     <Compile Include="Example\StringEmpty.cs" />
+    <Compile Include="Example\ThreadExtA.cs" />
     <Compile Include="Example\TypeSafe.cs" />
     <Compile Include="Example\VolatileYield.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -82,6 +83,7 @@
     <Content Include="Doc\Database\table\dbo.Subjects.Table.sql" />
     <Content Include="Doc\Database\table\dbo.SubjectScore.Table.sql" />
     <Content Include="Doc\http协议-1.txt" />
+    <Content Include="Doc\前端.txt" />
     <Content Include="Doc\知识点-2.txt" />
     <Content Include="Doc\pointer-reference.txt" />
     <Content Include="Doc\数据库-1.txt" />

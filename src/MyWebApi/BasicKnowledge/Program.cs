@@ -86,7 +86,8 @@ namespace BasicKnowledge
 
             //IEnumeratorExt.Print();
 
-            ExpressionTree.Print();
+            //ExpressionTree.Print();
+            ThreadExtA.Print();
         }
     }
 }

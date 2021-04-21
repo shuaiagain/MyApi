@@ -1,0 +1,9 @@
+1.事件循环机制
+https://www.cnblogs.com/cangqinglang/p/8967268.html
+https://zhuanlan.zhihu.com/p/87684858
+https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/EventLoop
+https://juejin.cn/post/6937076967283884040#heading-7
+
+2.Promise
+https://juejin.cn/post/6937076967283884040#heading-7
+https://zhuanlan.zhihu.com/p/58428287?utm_source=wechat_timeline
