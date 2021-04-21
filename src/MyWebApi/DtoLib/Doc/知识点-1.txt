@@ -90,6 +90,7 @@ https://www.cnblogs.com/jackson0714/p/5111347.html
 https://www.cnblogs.com/JimmyZheng/archive/2012/06/10/2543143.html
 https://www.cnblogs.com/zhili/category/385032.html
 https://www.cnblogs.com/yunfeifei/p/4122084.html
+https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
 
 	6.1前台线程和后台线程的区别
 		(1)所有前台线程结束，应用程序才会结束
