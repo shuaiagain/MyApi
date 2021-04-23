@@ -117,7 +117,8 @@ https://kb.cnblogs.com/page/42318/3/
 10.ado.net 
 https://www.cnblogs.com/yangcaogui/archive/2012/06/09/2537086.html
 
-11..net平台常用框架
+11..net平台基础及常用框架
+https://www.cnblogs.com/JimmyZhang/archive/2012/11/27/2790759.html
 https://www.cnblogs.com/hgmyz/p/5313983.html
 
 12..NET Core 事件总线,分布式事务解决方案：CAP
@@ -125,3 +126,9 @@ https://www.cnblogs.com/savorboard/p/cap.html
 
 13..net core
 https://www.cnblogs.com/heyuquan/p/dotnet-advance-learning-resource.html
+
+14.文件操作
+https://www.cnblogs.com/yukaizhao/archive/2011/07/27/system-io-file.html
+
+15.各种工具类
+https://github.com/Jimmey-Jiang/Common.Utility

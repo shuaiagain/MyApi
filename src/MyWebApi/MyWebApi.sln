@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPattern", "DesignPatt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtoLib", "DtoLib\DtoLib.csproj", "{6195A31F-65BB-4948-862F-1B276F1E3E6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOperate", "FileOperate\FileOperate.csproj", "{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -61,6 +63,10 @@ Global
 		{6195A31F-65BB-4948-862F-1B276F1E3E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6195A31F-65BB-4948-862F-1B276F1E3E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6195A31F-65BB-4948-862F-1B276F1E3E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
