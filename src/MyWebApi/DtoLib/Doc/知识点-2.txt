@@ -7,3 +7,6 @@ https://www.cnblogs.com/jicheng/p/6396986.html
 6.状态机，async,await,yield
 7.构造函数
 8.hashset,hashmap,hashtable,dictionary,mecache
+9.DBNull.Value和Null的用法和区别
+https://www.cnblogs.com/kliine/p/10232610.html
+https://blog.csdn.net/henulwj/article/details/7830615

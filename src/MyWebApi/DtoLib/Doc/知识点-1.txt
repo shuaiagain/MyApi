@@ -99,7 +99,29 @@ https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
 
 7.orm
 https://www.cnblogs.com/farb/p/IntroductionToEF.html
+https://www.cnblogs.com/lsxqw2004/p/4701979.html
+https://www.cnblogs.com/guomingfeng/archive/2013/05/19/mvc-overall-design.html
+https://www.cnblogs.com/zhaopei/p/5721789.html
 
 8.asp.net http请求管道
 https://www.cnblogs.com/refactor/archive/2012/07/06/2568742.html
 https://blog.csdn.net/overmaker/article/details/2096859
+https://www.cnblogs.com/cmblogs/p/3952008.html
+https://www.cnblogs.com/hexu6788/archive/2012/05/28/2520712.html
+https://www.cnblogs.com/gougou1981/p/9830668.html
+
+9..net内存分配
+https://www.cnblogs.com/cheshui/archive/2012/09/29/2707910.html
+https://kb.cnblogs.com/page/42318/3/
+
+10.ado.net 
+https://www.cnblogs.com/yangcaogui/archive/2012/06/09/2537086.html
+
+11..net平台常用框架
+https://www.cnblogs.com/hgmyz/p/5313983.html
+
+12..NET Core 事件总线,分布式事务解决方案：CAP
+https://www.cnblogs.com/savorboard/p/cap.html
+
+13..net core
+https://www.cnblogs.com/heyuquan/p/dotnet-advance-learning-resource.html

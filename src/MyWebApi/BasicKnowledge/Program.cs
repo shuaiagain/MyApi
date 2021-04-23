@@ -13,6 +13,10 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
+            StringEmptyDBNull.Print();
+            //ThreadExtA.Print();
+
+            #region before
             //Console.WriteLine("main thread start");
             //OneDto.AsynchronyWithTPL();
             //Console.WriteLine("main thread end ");
@@ -86,8 +90,8 @@ namespace BasicKnowledge
 
             //IEnumeratorExt.Print();
 
-            //ExpressionTree.Print();
-            ThreadExtA.Print();
+            //ExpressionTree.Print(); 
+            #endregion
         }
     }
 }
