@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 using System.Threading;
@@ -13,15 +15,151 @@ namespace DtoLib.Example
     {
         public static void Print()
         {
-            //ThreadA();
-            //ThreaB();
-            //ThreadC();
-            //ThreadD();
-            //TaskA();
-            //TaskB();
+            TaskH();
+            //TaskG();
+            //TaskSyncMethod();
+            //TaskF();
+            //TaskE();
+            //TaskD();
             //TaskC();
-            TaskD();
+            //TaskB();
+            //TaskA();
         }
+
+        #region Async/Await
+        public static async Task<int> AsyncTaskResultMethod()
+        {
+            return await Task.FromResult(5);
+        }
+
+        public static async Task AsyncTaskMethod()
+        {
+            await new TaskCompletionSource<int>().Task;
+        }
+
+        public static async void AsyncVoidMethod()
+        {
+
+        }
+
+        public static int IsRegularMethod()
+        {
+            return 5;
+        }
+
+        private static bool IsAsyncMethod(Type className, string methodName)
+        {
+            MethodInfo method = className.GetMethod(methodName);
+            Type attType = typeof(AsyncStateMachineAttribute);
+            var attribute = (AsyncStateMachineAttribute)method.GetCustomAttribute(attType);
+
+            return attribute != null;
+        }
+
+        public static void ShowResult(Type classType, string methodName)
+        {
+            Console.WriteLine((methodName + ":").PadRight(16));
+
+            if (IsAsyncMethod(classType, methodName))
+                Console.WriteLine("async method");
+            else
+                Console.WriteLine("regular method");
+        }
+
+        #endregion
+
+        public static async void TaskH()
+        {
+            int <>a= 0;
+            var result = await Task.Run(() =>
+            {
+                Console.WriteLine($"current thread:{Thread.CurrentThread.ManagedThreadId}");
+                Console.WriteLine($"isthreadpool thead:{Thread.CurrentThread.IsThreadPoolThread}");
+                Console.WriteLine($"isbackground thead:{Thread.CurrentThread.IsBackground}");
+
+                //Thread.Sleep(1000);
+                return 25;
+            });
+
+            Console.WriteLine($"isthreadpool thead:{Thread.CurrentThread.IsThreadPoolThread}");
+            Console.WriteLine($"isbackground thead:{Thread.CurrentThread.IsBackground}");
+            Console.WriteLine(result);
+            Console.ReadKey();
+        }
+
+        #region TaskG
+        public static async void TaskG()
+        {
+            try
+            {
+                var result = await Task.Run(() =>
+                {
+                    string str = null;
+                    str.ToLower();
+                    return str;
+                });
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.InnerException.Message);
+            }
+            Console.WriteLine("async");
+            Console.ReadKey();
+        }
+
+        public static void TaskSyncMethod()
+        {
+            Console.WriteLine("sync");
+        }
+        #endregion
+
+        #region TaskF
+        public static void TaskF()
+        {
+            try
+            {
+                var task = Task.Run(() =>
+                  {
+                      string str = null;
+                      str.ToLower();
+                      return str;
+                  });
+
+                var result = task.Result;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.InnerException.Message);
+            }
+        }
+        #endregion
+
+        #region TaskE
+        public static void TaskE()
+        {
+            var parent = Task.Factory.StartNew(() =>
+              {
+                  int[] num = { 0 };
+
+                  var childFactory = new TaskFactory(TaskCreationOptions.AttachedToParent, TaskContinuationOptions.None);
+                  childFactory.StartNew(() => 5 / num[0]);
+                  childFactory.StartNew(() => num[1]);
+                  childFactory.StartNew(() => throw null);
+              });
+
+            try
+            {
+                parent.Wait();
+            }
+            catch (AggregateException ex)
+            {
+                foreach (Exception item in ex.InnerExceptions)
+                {
+                    Console.WriteLine(item.InnerException.Message.ToString());
+                }
+            }
+        }
+        #endregion
 
         #region TaskD
         /// <summary>

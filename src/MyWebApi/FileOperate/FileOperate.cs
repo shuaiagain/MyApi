@@ -28,7 +28,7 @@ namespace FileOperate
 
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(filePath);
-                XmlNodeList nodeList = xmlDoc.SelectSingleNode();
+                XmlNode nodeList = xmlDoc.SelectSingleNode("");
                 foreach (XmlNode item in xmlDoc.ChildNodes)
                 {
                     Console.WriteLine("OuterXml：{0}，InnerText：{1}", item.OuterXml, item.InnerText);

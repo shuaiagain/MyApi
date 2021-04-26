@@ -82,11 +82,15 @@ https://www.cnblogs.com/zhili/p/SingletonPatterm.html
 https://www.cnblogs.com/huangxincheng/p/13558006.html
 https://www.cnblogs.com/ryzen/p/13938188.html
 https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
+https://www.cnblogs.com/johnyong/p/14089110.html
 
 5.委托
 https://www.cnblogs.com/jackson0714/p/5111347.html
 
 6.线程
+https://www.cnblogs.com/johnyong/p/14089110.html
+https://www.cnblogs.com/edisonchou/p/4848131.html
+https://www.cnblogs.com/anding/p/5301754.html
 https://www.cnblogs.com/JimmyZheng/archive/2012/06/10/2543143.html
 https://www.cnblogs.com/zhili/category/385032.html
 https://www.cnblogs.com/yunfeifei/p/4122084.html

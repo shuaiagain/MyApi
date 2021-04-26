@@ -13,7 +13,8 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            StringEmptyDBNull.Print();
+            ThreadExtB.Print();
+            //StringEmptyDBNull.Print();
             //ThreadExtA.Print();
 
             #region before
