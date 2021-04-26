@@ -70,7 +70,6 @@ namespace DtoLib.Example
 
         public static async void TaskH()
         {
-            int <>a= 0;
             var result = await Task.Run(() =>
             {
                 Console.WriteLine($"current thread:{Thread.CurrentThread.ManagedThreadId}");
