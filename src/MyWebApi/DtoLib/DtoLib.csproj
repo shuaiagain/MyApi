@@ -66,6 +66,7 @@
     <Compile Include="Example\StringEmpty.cs" />
     <Compile Include="Example\StringEmptyDBNull.cs" />
     <Compile Include="Example\ThreadExtA.cs" />
+    <Compile Include="Example\ThreadExtC.cs" />
     <Compile Include="Example\ThreadExtB.cs" />
     <Compile Include="Example\TypeSafe.cs" />
     <Compile Include="Example\VolatileYield.cs" />

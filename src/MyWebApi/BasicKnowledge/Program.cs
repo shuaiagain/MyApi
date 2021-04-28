@@ -13,7 +13,8 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            ThreadExtB.Print();
+            ThreadExtC.Print();
+            //ThreadExtB.Print();
             //StringEmptyDBNull.Print();
             //ThreadExtA.Print();
 
