@@ -112,6 +112,9 @@ https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
 6.2 多线程和异步系列
 https://www.cnblogs.com/yinrq/p/5419872.html
 https://www.cnblogs.com/yaopengfei/p/9206924.html
+https://www.cnblogs.com/liqingwen/p/5831951.html
+https://www.cnblogs.com/liqingwen/p/5844095.html
+https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/hh191443(v=vs.110)?redirectedfrom=MSDN
 （1）线程的无序性
 
    
