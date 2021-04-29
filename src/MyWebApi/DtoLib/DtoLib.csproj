@@ -66,6 +66,8 @@
     <Compile Include="Example\StringEmpty.cs" />
     <Compile Include="Example\StringEmptyDBNull.cs" />
     <Compile Include="Example\ThreadExtA.cs" />
+    <Compile Include="Example\ThreadExtE.cs" />
+    <Compile Include="Example\ThreadExtD.cs" />
     <Compile Include="Example\ThreadExtC.cs" />
     <Compile Include="Example\ThreadExtB.cs" />
     <Compile Include="Example\TypeSafe.cs" />

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -15,9 +16,10 @@ namespace DtoLib.Example
     {
         public static void Print()
         {
-            ExampleA();
-            //Example();
+            //ExampleA();
+            Example();
         }
+
         #region ExampleA
         static void ExampleA()
         {
@@ -43,16 +45,38 @@ namespace DtoLib.Example
         #region Example
         static void Example()
         {
+            Stopwatch sw = new Stopwatch();
+            sw.Start();
+            Task<string> aa = Task.Run(() =>
+            {
+                for (int i = 0; i < 1000000; i++)
+                {
+
+                }
+
+                var a = "task1";
+                Console.WriteLine(a);
+                return a;
+            });
+
+            sw.Stop();
+            //Console.WriteLine(aa.Result);
+            Console.WriteLine("main thread {0}毫秒",sw.ElapsedMilliseconds);
+
             Task<string> html = GetResult();
             Console.WriteLine("正在下载......");
             var content = html.Result;
             Console.WriteLine(content);
+            Console.WriteLine("done");
         }
 
         static async Task<string> GetResult()
         {
+            Console.WriteLine("异步方法开始执行...");
             var wbClient = new WebClient();
-            var content = await wbClient.DownloadStringTaskAsync(new Uri("https://www.cnblogs.com/"));
+            wbClient.Encoding = Encoding.UTF8;
+            var content = await wbClient.DownloadStringTaskAsync(new Uri("https://kaifa.baidu.com/"));
+
             return content;
         }
         #endregion

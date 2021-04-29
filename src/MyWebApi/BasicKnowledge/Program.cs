@@ -13,7 +13,8 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            ThreadExtC.Print();
+            ThreadExtE.Print();
+            //ThreadExtC.Print();
             //ThreadExtB.Print();
             //StringEmptyDBNull.Print();
             //ThreadExtA.Print();
@@ -87,11 +88,8 @@ namespace BasicKnowledge
 
             //EqualsGetHashCode.Print();
             //PointerType.Print();
-
             //DefaultExt.Print();
-
             //IEnumeratorExt.Print();
-
             //ExpressionTree.Print(); 
             #endregion
         }

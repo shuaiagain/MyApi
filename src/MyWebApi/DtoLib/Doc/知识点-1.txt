@@ -104,11 +104,17 @@ https://www.cnblogs.com/zhili/category/385032.html
 https://www.cnblogs.com/yunfeifei/p/4122084.html
 https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
 
-	6.1前台线程和后台线程的区别
-		(1)所有前台线程结束，应用程序才会结束
-		(2)所有前台线程结束后，后台线程会自动结束
-		(3)前台线程执行完毕后，不用管后台线程是否结束，应用程序可以直接退出
+6.1前台线程和后台线程的区别
+	(1)所有前台线程结束，应用程序才会结束
+	(2)所有前台线程结束后，后台线程会自动结束
+	(3)前台线程执行完毕后，不用管后台线程是否结束，应用程序可以直接退出
 
+6.2 多线程和异步系列
+https://www.cnblogs.com/yinrq/p/5419872.html
+https://www.cnblogs.com/yaopengfei/p/9206924.html
+（1）线程的无序性
+
+   
 7.orm
 https://www.cnblogs.com/farb/p/IntroductionToEF.html
 https://www.cnblogs.com/lsxqw2004/p/4701979.html
