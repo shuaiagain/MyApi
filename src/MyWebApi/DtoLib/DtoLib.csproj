@@ -57,6 +57,7 @@
     <Compile Include="Example\EnumType.cs" />
     <Compile Include="Example\EqualsGetHashCode.cs" />
     <Compile Include="Example\ExpressionTree.cs" />
+    <Compile Include="Example\HashTable_Dictionary_ConcurrentDictionary.cs" />
     <Compile Include="Example\IEnumeratorExt.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\PointerType.cs" />

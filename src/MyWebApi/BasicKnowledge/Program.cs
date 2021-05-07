@@ -13,7 +13,8 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            ThreadExtE.Print();
+            HashTable_Dictionary_ConcurrentDictionary.Print();
+            //ThreadExtE.Print();
             //ThreadExtC.Print();
             //ThreadExtB.Print();
             //StringEmptyDBNull.Print();

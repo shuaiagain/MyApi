@@ -57,6 +57,11 @@
 	
 	1.6反射
 
+	1.7C#中字典集合HashTable、Dictionary、ConcurrentDictionary三者区别
+	https://www.cnblogs.com/yinrq/p/5584885.html
+	https://www.cnblogs.com/lukyw/p/Hashtable.html
+	https://www.cnblogs.com/wayfarer/archive/2004/04/12/5852.html
+
 2.关键字
 	2.1 const,static,readonly
 	2.2 ref,out

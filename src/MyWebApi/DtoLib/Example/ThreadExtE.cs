@@ -114,7 +114,7 @@ namespace DtoLib.Example
             ThreadPool.QueueUserWorkItem(a => { Console.WriteLine("state：{0}", a); }, "pool");
             Console.ReadKey();
 
-            ThreadPool.SetMaxThreads();
+            //ThreadPool.SetMaxThreads();
         }
 
     }
