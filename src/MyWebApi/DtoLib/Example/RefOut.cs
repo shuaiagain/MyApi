@@ -71,18 +71,26 @@ namespace DtoLib.Example
             UserDto a = new UserDto() { name = "a", age = 1 },
                 b = new UserDto() { name = "b", age = 2 };
 
+            UserDto c = b;
             #region 证明引用类型参数是按值传参的
             ExchangeObj(a, b);
-            Console.WriteLine("a.name={0},b.name={1}", a.name, b.name);
-            Console.WriteLine("a.age={0},b.age={1}", a.age, b.age);
+            Console.WriteLine("a.name={0},b.name={1},c.name = {2}", a.name, b.name, c.name);
+            Console.WriteLine("a.age={0},b.age={1},c.age = {2}", a.age, b.age, c.age);
 
             ExchangeObjValue(a, b);
             Console.WriteLine("a.name={0},b.name={1}", a.name, b.name);
             Console.WriteLine("a.age={0},b.age={1}", a.age, b.age);
             #endregion
 
+            a.name = "a";
+            b.name = "b";
             ExchangeObj(ref a, ref b);
-            Console.WriteLine("a={0},b={1}", a.name, b.name);
+            Console.WriteLine("a.name = {0},b.name={1},c.name= {2}", a.name, b.name, c.name);
+            Console.WriteLine("a.age={0},b.age={1},c.age = {2} ", a.age, b.age, c.age);
+
+            ExchangeObjValueRef(ref a, ref b);
+            Console.WriteLine("a.name = {0},b.name={1},c.name= {2}", a.name, b.name, c.name);
+            Console.WriteLine("a.age={0},b.age={1},c.age = {2} ", a.age, b.age, c.age);
         }
 
         public void ExchangeObj(ref UserDto a, ref UserDto b)
@@ -113,7 +121,16 @@ namespace DtoLib.Example
             a = new UserDto() { name = "aa-1", age = 11 };
             b = new UserDto() { name = "bb-1", age = 22 };
         }
+
+        public void ExchangeObjValueRef(ref UserDto a,ref UserDto b)
+        {
+            a = new UserDto() { name = "aa-1", age = 11 };
+            b = new UserDto() { name = "bb-1", age = 22 };
+        }
         #endregion
+
+
+
 
         #endregion
 

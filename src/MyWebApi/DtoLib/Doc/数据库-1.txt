@@ -2,3 +2,37 @@
 https://www.cnblogs.com/liuhaorain/archive/2012/02/06/2340409.html
 2.数据库连接池
 https://www.cnblogs.com/liuhaorain/archive/2012/02/19/2353110.html
+
+3.char和varchar区别
+DATALENGTH()：此函数返回用于表示任何表达式的字节数
+LEN()：返回文本字符串中的字符数
+
+ 固定长度或可变长度的字符数据类型。
+char [ ( n ) ]
+	固定长度，非 Unicode 字符数据，长度为 n 个字节。n 的取值范围为 1 至 8,000，存储大小是 n 个字节。char 的 ISO 同义词为 character。
+varchar [ ( n | max ) ]
+	可变长度，非 Unicode 字符数据。n 的取值范围为 1 至 8,000。
+	max 指示最大存储大小是 2^31-1 个字节。存储大小是输入数据的实际长度加 2 个字节。
+	所输入数据的长度可以为 0 个字符。varchar 的 ISO 同义词为 char varying 或 character varying
+	 
+3.1nchar和nvarchar区别
+nchar 和 nvarchar (Transact-SQL)
+   字符数据类型（nchar 长度固定，nvarchar 长度可变）和 Unicode 数据使用 UNICODE UCS-2 字符集。
+nchar [ ( n ) ]
+	n 个字符的固定长度的 Unicode 字符数据。n 值必须在 1 到 4,000 之间（含）。存储大小为两倍 n 字节。
+	nchar 的 ISO 同义词为 national char 和 national character。
+nvarchar [ ( n | max ) ]
+  可变长度 Unicode 字符数据。n值在 1 到 4,000 之间（含）。max 指示最大存储大小为 2^31-1 字节。
+  存储大小是所输入字符个数的两倍 + 2 个字节。
+  所输入数据的长度可以为 0 个字符。nvarchar 的 ISO 同义词为 national char varying 和 national character varying
+
+  
+
+类型						n代表的意义			存储字符长度(个数)									最大占用存储空间大小		实际占用的存储空间										是否固定长度(占用字节长度)
+char(n)					字节数					<=n(由每个字符所占字节大小决定)			n个字节							n个字节														是
+varchar(n) 			字节数					<=n(由每个字符所占字节大小决定)			n+个字节							实际存入的字节+2个字节								否
+nchar(n)				字符个数				<=2n(由每个字符所占字节大小决定)			2n个字节							字符个数*字符大小 个字节，unicode编码		是
+nvarchar(n)			字符个数				<=2n(由每个字符所占字节大小决定)			2n+2个字节						2n+2，unicode编码										否
+
+由上表格对比可以得出结论
+char和varchar是的区别是实际占用的存储空间不一样，即char(10),varchar(10),同时存入123，则

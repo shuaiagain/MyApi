@@ -77,6 +77,7 @@
 		  https://www.cnblogs.com/changbaishan/p/10579021.html
 	2.6 lock
 		 https://www.cnblogs.com/edisonchou/p/4848131.html
+		 https://www.cnblogs.com/yank/p/3227324.html
 
 3.单例模式
  （1）线程安全吗？
@@ -123,6 +124,9 @@ https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-20
 （1）线程的无序性
 
    
+ 6.3线程同步
+ https://www.cnblogs.com/yank/p/3227324.html
+
 7.orm
 https://www.cnblogs.com/farb/p/IntroductionToEF.html
 https://www.cnblogs.com/lsxqw2004/p/4701979.html

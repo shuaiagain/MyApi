@@ -41,6 +41,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Example\DictionaryExt.cs" />
+    <Compile Include="Example\Dictionary_Condictionary.cs" />
     <Compile Include="Example\AbstractInterface.cs" />
     <Compile Include="Example\AnonymousDelegate.cs" />
     <Compile Include="Example\ArrayList_List.cs" />

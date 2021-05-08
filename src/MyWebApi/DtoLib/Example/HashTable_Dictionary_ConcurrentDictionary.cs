@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Diagnostics;
+using System.Threading;
 
 namespace DtoLib.Example
 {
@@ -14,7 +15,8 @@ namespace DtoLib.Example
     {
         public static void Print()
         {
-            ExampleC();
+            ExampleA2();
+            //ExampleC();
             //ExampleB();
             //ExampleA();
         }
@@ -158,6 +160,76 @@ namespace DtoLib.Example
             {
                 Console.WriteLine("key= {0}，value= {1}", item.Key, item.Value);
             }
+        }
+
+        private static void ExampleA2()
+        {
+            Hashtable ht = new Hashtable();
+            Thread t1 = new Thread(() =>
+            {
+                try
+                {
+                    ht.Add("1", "1");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error1：{0}", ex.Message);
+                }
+            });
+
+            Thread t2 = new Thread(() =>
+            {
+                try
+                {
+                    ht.Add("1", "1");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error2：{0}", ex.Message);
+                }
+            });
+
+            Thread t3 = new Thread(() =>
+            {
+                try
+                {
+                    ht.Add("1", "1");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error3：{0}", ex.Message);
+                }
+            });
+
+            Thread t4 = new Thread(() =>
+            {
+                try
+                {
+                    ht.Add("1", "1");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error4：{0}", ex.Message);
+                }
+            });
+
+            Thread t5 = new Thread(() =>
+            {
+                try
+                {
+                    ht.Add("1", "1");
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("error5：{0}", ex.Message);
+                }
+            });
+
+            t1.Start();
+            t2.Start();
+            t3.Start();
+            t4.Start();
+            t5.Start();
         }
         #endregion
     }
