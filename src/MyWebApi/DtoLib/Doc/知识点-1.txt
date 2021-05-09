@@ -62,6 +62,8 @@
 	https://www.cnblogs.com/lukyw/p/Hashtable.html
 	https://www.cnblogs.com/wayfarer/archive/2004/04/12/5852.html
 
+	1.7浅复制、深复制
+
 2.关键字
 	2.1 const,static,readonly
 	2.2 ref,out
@@ -75,6 +77,8 @@
 	2.5 equals,==差别，重写GetHashCode方法（重写Equals方法必须重写GetHashCode方法，否则发生警告）
 		  https://www.cnblogs.com/xiaochen-vip8/p/5506478.html
 		  https://www.cnblogs.com/changbaishan/p/10579021.html
+		  https://www.cnblogs.com/solan/archive/2012/08/03/CSharp07.html
+			 
 	2.6 lock
 		 https://www.cnblogs.com/edisonchou/p/4848131.html
 		 https://www.cnblogs.com/yank/p/3227324.html

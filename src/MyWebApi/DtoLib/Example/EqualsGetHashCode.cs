@@ -43,7 +43,7 @@ namespace DtoLib.Example
         public static bool ReferenceEqual(object objA, object objB)
         {
             return objA == objB;
-        } 
+        }
         #endregion
 
         static void EqualNumer()
@@ -78,8 +78,6 @@ namespace DtoLib.Example
             Console.WriteLine("dc.GetHashCode() = {0} ", dc.GetHashCode());
             Console.WriteLine("----float----end----");
             Console.WriteLine();
-
-
         }
 
         static void EqualString()
@@ -170,17 +168,17 @@ namespace DtoLib.Example
             string bb = "4";
             string cc = "1234";
             string dd = aa + bb;
-            Console.WriteLine("----string----start----");
-
-            Console.WriteLine(" cc.Equals(bb) dd {0} ", cc.Equals(dd));
-            Console.WriteLine("object.Equals(cc,dd) is {0} ", object.Equals(cc, dd));
-            Console.WriteLine("Equals4_6_1.Equals(cc,dd) is {0} ", Equals4_6_1(cc, dd));
-            Console.WriteLine("Equals4_0.Equals(cc,dd) is {0} ", Equals4_0(cc, dd));
-            Console.WriteLine("object.ReferenceEquals(cc, dd) is {0} ", object.ReferenceEquals(cc, dd));
+            //Console.WriteLine("----string----start----");
             Console.WriteLine(" cc==dd is {0} ", cc == dd);
 
-            Console.WriteLine("----string----end----");
-            Console.WriteLine();
+            //Console.WriteLine(" cc.Equals(bb) dd {0} ", cc.Equals(dd));
+            Console.WriteLine("object.Equals(cc,dd) is {0} ", object.Equals(cc, dd));
+            //Console.WriteLine("Equals4_6_1.Equals(cc,dd) is {0} ", Equals4_6_1(cc, dd));
+            //Console.WriteLine("Equals4_0.Equals(cc,dd) is {0} ", Equals4_0(cc, dd));
+            //Console.WriteLine("object.ReferenceEquals(cc, dd) is {0} ", object.ReferenceEquals(cc, dd));
+
+            //Console.WriteLine("----string----end----");
+            //Console.WriteLine();
         }
 
         static void EqualNumerA()
@@ -188,16 +186,18 @@ namespace DtoLib.Example
             int a = 1;
 
             decimal da = 1;
-            Console.WriteLine("----float----start----");
+            //Console.WriteLine("----float----start----");
             Console.WriteLine("da.Equals(a) is {0} ", da.Equals(a));
             Console.WriteLine("object.Equals(da, a) = {0} ", object.Equals(da, a));
-            Console.WriteLine("object.ReferenceEquals(da, a) = {0} ", object.ReferenceEquals(da, a));
+            //Console.WriteLine("object.ReferenceEquals(da, a) = {0} ", object.ReferenceEquals(da, a));
             Console.WriteLine("da == da {0} ", da == a);
+            //Console.WriteLine("Equals4_0(da, a) = {0} ", Equals4_0(da, a));
+            //Console.WriteLine("Equals4_6_1(da, a) = {0} ", Equals4_6_1(da, a));
 
-            Console.WriteLine("da.GetHashCode() = {0} ", da.GetHashCode());
-            Console.WriteLine("a.GetHashCode() = {0} ", a.GetHashCode());
-            Console.WriteLine("----float----end----");
-            Console.WriteLine();
+            //Console.WriteLine("da.GetHashCode() = {0} ", da.GetHashCode());
+            //Console.WriteLine("a.GetHashCode() = {0} ", a.GetHashCode());
+            //Console.WriteLine("----float----end----");
+            //Console.WriteLine();
 
         }
 
@@ -207,8 +207,9 @@ namespace DtoLib.Example
             //EqualString();
             //EqualStringA();
             //EqualStringB();
-            //EqualStringC();
+            EqualStringC();
             EqualNumerA();
+
         }
     }
 }

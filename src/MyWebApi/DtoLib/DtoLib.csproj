@@ -58,6 +58,7 @@
     <Compile Include="Example\DelegateEvent.cs" />
     <Compile Include="Example\EnumType.cs" />
     <Compile Include="Example\EqualsGetHashCode.cs" />
+    <Compile Include="Example\EqualsHelper.cs" />
     <Compile Include="Example\ExpressionTree.cs" />
     <Compile Include="Example\HashTable_Dictionary_ConcurrentDictionary.cs" />
     <Compile Include="Example\IEnumeratorExt.cs" />
@@ -74,6 +75,7 @@
     <Compile Include="Example\ThreadExtC.cs" />
     <Compile Include="Example\ThreadExtB.cs" />
     <Compile Include="Example\TypeSafe.cs" />
+    <Compile Include="Example\ValueTypes.cs" />
     <Compile Include="Example\VolatileYield.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Example\TaskBasicOperate.cs" />
