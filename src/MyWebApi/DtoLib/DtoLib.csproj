@@ -64,6 +64,7 @@
     <Compile Include="Example\IEnumeratorExt.cs" />
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\PointerType.cs" />
+    <Compile Include="Example\ReflectionPractice.cs" />
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\StateMachine.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
