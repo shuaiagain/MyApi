@@ -1,4 +1,6 @@
 1.反射
+https://www.cnblogs.com/haoyifei/p/5730284.html#autoid-0-0-0
+https://www.cnblogs.com/knowledgesea/archive/2013/03/02/2935920.html
 
 2.expression树
 3.http请求管道，Global.asax文件
