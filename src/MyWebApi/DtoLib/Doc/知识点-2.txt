@@ -1,4 +1,5 @@
 1.反射
+
 2.expression树
 3.http请求管道，Global.asax文件
 	https://www.cnblogs.com/jicheng/p/6396986.html
@@ -18,3 +19,7 @@ https://www.cnblogs.com/farb/p/LocationInterception.html
 
 11.字符集和字符编码
 https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
+
+12.序列化
+
+13.swagger、jenkins

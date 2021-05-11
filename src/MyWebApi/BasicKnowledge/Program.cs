@@ -14,6 +14,8 @@ namespace BasicKnowledge
         static void Main(string[] args)
         {
             ReflectionPractice.Print();
+            
+            #region 2
             //Dictionary_Condictionary.Print();
             //HashTable_Dictionary_ConcurrentDictionary.Print();
             //ThreadExtE.Print();
@@ -21,6 +23,7 @@ namespace BasicKnowledge
             //ThreadExtB.Print();
             //StringEmptyDBNull.Print();
             //ThreadExtA.Print();
+            #endregion
 
             #region before
             //Console.WriteLine("main thread start");
