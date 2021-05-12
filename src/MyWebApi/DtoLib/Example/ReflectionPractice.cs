@@ -29,6 +29,17 @@ namespace DtoLib.Example
             {
                 return Weight;
             }
+
+            public void SetWeight(decimal weight)
+            {
+                this.Weight = weight;
+            }
+
+            public void SetWeight(decimal weight, decimal defaultValue)
+            {
+                this.Weight = weight <= 0 ? defaultValue : weight;
+            }
+
             public string Name { get; set; }
 
             public int Age { get; set; }
@@ -169,7 +180,17 @@ namespace DtoLib.Example
 
             foreach (MethodInfo method in methods)
             {
+                Console.WriteLine();
+                Console.WriteLine("method--begin--");
+
                 Console.WriteLine("MethodName={0} ，IsConstructor：{1}", method.Name, method.IsConstructor);
+                foreach (var item in method.GetParameters())
+                {
+                    Console.WriteLine("parameterName:{0},positioin:{1},parameterType:{2}", item.Name,item.Position,item.ParameterType);
+                }
+
+                Console.WriteLine("method--end--");
+                Console.WriteLine();
             }
 
             foreach (ConstructorInfo constructor in constructors)

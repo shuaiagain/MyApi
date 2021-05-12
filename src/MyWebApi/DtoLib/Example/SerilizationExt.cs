@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DtoLib.Example
+{
+    public class SerilizationExt
+    {
+        public static void Print()
+        {
+            ExampleA();
+        }
+
+        public static void ExampleA()
+        {
+
+        }
+    }
+}
