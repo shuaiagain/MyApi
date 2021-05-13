@@ -10,6 +10,8 @@ https://www.cnblogs.com/knowledgesea/archive/2013/03/02/2935920.html
 5.c# byte、stream、文件处理
 	5.1stream
 	https://www.cnblogs.com/JimmyZheng/archive/2012/03/17/2402814.html
+	5.2文件缓冲区
+	https://www.cnblogs.com/vincentfu/p/5793177.html
 
 6.状态机，async,await,yield
 	https://www.cnblogs.com/yilezhu/p/10555849.html
