@@ -13,8 +13,10 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            ReflectionPractice.Print();
-            
+            StreamExt2.Print();
+            //StreamExt.Print();
+            //ReflectionPractice.Print();
+
             #region 2
             //Dictionary_Condictionary.Print();
             //HashTable_Dictionary_ConcurrentDictionary.Print();
