@@ -13,7 +13,9 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            StreamExt2.Print();
+            StreamExt4.Print();
+            //StreamExt3.Print();
+            //StreamExt2.Print();
             //StreamExt.Print();
             //ReflectionPractice.Print();
 

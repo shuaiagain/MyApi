@@ -71,6 +71,8 @@
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\SerilizationExt.cs" />
     <Compile Include="Example\StateMachine.cs" />
+    <Compile Include="Example\StreamExt4.cs" />
+    <Compile Include="Example\StreamExt3.cs" />
     <Compile Include="Example\StreamExt2.cs" />
     <Compile Include="Example\StreamExt.cs" />
     <Compile Include="Example\StringBuilderString.cs" />
@@ -108,6 +110,7 @@
     <Content Include="Doc\知识点-1.txt" />
     <Content Include="Doc\设计模式-1.txt" />
     <Content Include="Doc\Database\1.各种join-1.sql" />
+    <Content Include="File\FileFileCreate.txt" />
     <Content Include="File\TextReader.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
