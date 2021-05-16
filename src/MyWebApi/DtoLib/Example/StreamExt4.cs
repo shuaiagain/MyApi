@@ -13,6 +13,7 @@ namespace DtoLib.Example
     {
         public static void Print()
         {
+            new UpFileSingleTest().UploadFile();
             //ExampleB();
             //ExampleA();
         }
@@ -91,6 +92,7 @@ namespace DtoLib.Example
     }
     #endregion
 
+    #region FileStreamTest
     public class FileStreamTest
     {
         const int WriteTimeout = 6000;
@@ -201,5 +203,102 @@ namespace DtoLib.Example
             Console.ReadLine();
         }
     }
+    #endregion
+
+    #region 分段上传
+    public class UpFileSingleTest
+    {
+        public const int BUFFER_COUNT = 1000;
+
+        #region WriteToServer
+        private void WriteToServer(string filePath, int startPosition, byte[] btArray)
+        {
+            FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate);
+            using (fs)
+            {
+                fs.Position = startPosition;
+                fs.Write(btArray, 0, btArray.Length);
+
+            }
+        }
+        #endregion
+
+        #region UpLoadFileFromLocal
+        private void UpLoadFileFromLocal(string localFilePath, string uploadFilePath, int startPosition, int totoalCount)
+        {
+            //if(!File.Exists(localFilePath)){return;}
+            //每次临时读取数据数
+            int tempReadCount = 0;
+            int tempBuffer = 0;
+
+            //定义一个缓冲区数组
+            byte[] bufferByteArray = new byte[BUFFER_COUNT];
+            FileStream fs = new FileStream(localFilePath, FileMode.Open);
+            //将流的位置设置在每段数据的初始位置
+            fs.Position = startPosition;
+            using (fs)
+            {
+                //循环将该段数据读出在写入服务器中
+                while (tempReadCount < totoalCount)
+                {
+                    tempBuffer = BUFFER_COUNT;
+                    //每段起始位置+每次循环读取数据的长度
+                    var writeStartPosition = startPosition + tempReadCount;
+                    if (tempBuffer + tempReadCount > totoalCount)
+                    {
+                        tempBuffer = totoalCount - tempReadCount;
+                        fs.Read(bufferByteArray, 0, tempBuffer);
+                        if (tempBuffer > 0)
+                        {
+                            byte[] newTempBtArray = new byte[tempBuffer];
+                            Array.Copy(bufferByteArray, 0, newTempBtArray, 0, tempBuffer);
+                            this.WriteToServer(uploadFilePath, writeStartPosition, newTempBtArray);
+                        }
+                    }
+                    else if (tempBuffer == BUFFER_COUNT)
+                    {
+                        //如果缓冲区的数据量小于该段数据量，并且tempBuffer=设定BUFFER_COUNT时，通过
+                        //while 循环每次读取一样的buffer值的数据写入服务器中，直到将该段数据全部处理完毕
+
+                        fs.Read(bufferByteArray, 0, tempBuffer);
+                        this.WriteToServer(uploadFilePath, writeStartPosition, bufferByteArray);
+                    }
+
+                    //通过每次的缓冲区数据，累计增加临时读取数
+                    tempReadCount += tempBuffer;
+                }
+
+            }
+
+        }
+        #endregion
+
+        public void UploadFile()
+        {
+
+            string filePathA = @"E:\back-end\MyApi\src\MyWebApi\DtoLib\File\TextReader.txt";
+            string filePathB = @"E:\back-end\MyApi\src\MyWebApi\DtoLib\File\TextReader2.txt";
+            UpFileSingleTest test = new UpFileSingleTest();
+            FileInfo file = new FileInfo(filePathA);
+
+            long fileLength = file.Length;
+            int divide = 5;
+            int perFileLength = (int)fileLength / divide;
+            long restCount = (int)fileLength % divide;
+
+            //循环上传数据
+            for (int i = 0; i < divide + 1; i++)
+            {
+                //每次定义不同的数据段,假设数据长度是500，那么每段的开始位置都是i*perFileLength
+                var startPosition = i * perFileLength;
+                //取得每次数据段的数据量
+                var totalCount = fileLength - perFileLength * i > perFileLength ? perFileLength : (int)(fileLength - perFileLength * i);
+                //上传该段数据
+                test.UpLoadFileFromLocal(filePathA, filePathB, startPosition, i == divide ? divide : totalCount);
+            }
+        }
+    }
+    #endregion
+
 
 }

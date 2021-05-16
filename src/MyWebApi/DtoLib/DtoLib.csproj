@@ -68,9 +68,11 @@
     <Compile Include="Example\InterLockedParallel.cs" />
     <Compile Include="Example\PointerType.cs" />
     <Compile Include="Example\ReflectionPractice.cs" />
+    <Compile Include="Example\Reflections.cs" />
     <Compile Include="Example\RefOut.cs" />
     <Compile Include="Example\SerilizationExt.cs" />
     <Compile Include="Example\StateMachine.cs" />
+    <Compile Include="Example\StreamExt5.cs" />
     <Compile Include="Example\StreamExt4.cs" />
     <Compile Include="Example\StreamExt3.cs" />
     <Compile Include="Example\StreamExt2.cs" />
@@ -111,6 +113,7 @@
     <Content Include="Doc\设计模式-1.txt" />
     <Content Include="Doc\Database\1.各种join-1.sql" />
     <Content Include="File\FileFileCreate.txt" />
+    <Content Include="File\TextReader2.txt" />
     <Content Include="File\TextReader.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
