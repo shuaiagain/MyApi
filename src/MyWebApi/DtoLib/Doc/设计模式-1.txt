@@ -5,10 +5,16 @@
 1.1创建型的设计模式：
 
 单例模式(Singleton)
+https://www.cnblogs.com/chenssy/p/3170538.html
+https://www.cnblogs.com/zhili/p/SingletonPatterm.html
 构建模式(Builder)
 原型模式(Prototype)
 抽象工厂模式(Abstract Factory)
+https://www.cnblogs.com/terrylee/archive/2005/12/13/295965.html
 工厂方法模式(Factory Method)
+https://www.cnblogs.com/zhili/p/SimpleFactory.html
+https://www.cnblogs.com/toutou/p/4899388.html
+
 
 
 1.2行为设计模式：

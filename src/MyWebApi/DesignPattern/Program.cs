@@ -12,6 +12,11 @@ namespace DesignPattern
     {
         static void Main(string[] args)
         {
+
+            #region 工厂模式
+            FactoryDto.Print(); 
+            #endregion
+
             //VolatileYield.Print();
             //VolatileYield.Print1();
 
@@ -26,7 +31,7 @@ namespace DesignPattern
             //foodb.Print();
             #endregion
 
-            ArrayList_List.Copy();
+            //ArrayList_List.Copy();
         }
     }
 }

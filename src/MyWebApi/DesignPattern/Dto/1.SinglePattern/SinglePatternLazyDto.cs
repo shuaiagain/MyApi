@@ -16,6 +16,11 @@ namespace DesignPattern.Dto
         //用于加锁
         private static readonly object locker = new object();
 
+        private SinglePatternLazyDto()
+        {
+
+        }
+
         #region 单线程情况下是OK的，但是多线程情况下就不是线程安全的了
         public static SinglePatternLazyDto GetInstanceWithThreadNotSafe()
         {

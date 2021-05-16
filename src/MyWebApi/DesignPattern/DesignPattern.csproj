@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dto\2.FactoryPattern\2.FactoryDto.cs" />
     <Compile Include="Dto\DesignPrincipleDto.cs" />
-    <Compile Include="Dto\2.FactoryPattern\SimpleFactoryDto.cs" />
+    <Compile Include="Dto\2.FactoryPattern\1.SimpleFactoryDto.cs" />
     <Compile Include="Dto\1.SinglePattern\SinglePatternLazyDto.cs" />
     <Compile Include="Dto\1.SinglePattern\SinglePatternHungryDto.cs" />
     <Compile Include="Example\SinglePattern.cs" />
