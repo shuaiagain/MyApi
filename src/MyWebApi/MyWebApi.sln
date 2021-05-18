@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DtoLib", "DtoLib\DtoLib.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileOperate", "FileOperate\FileOperate.csproj", "{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.Infrastructure", "4.Infrastructure", "{2B074102-AEFF-40BD-8193-E698DCF0E190}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mine.Infrastructure", "Mine.Infrastructure\Mine.Infrastructure.csproj", "{98E71294-75E4-4797-8312-5B775184F8A0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8023F076-4CAA-4A5D-B9C5-511919C2B0C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98E71294-75E4-4797-8312-5B775184F8A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98E71294-75E4-4797-8312-5B775184F8A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98E71294-75E4-4797-8312-5B775184F8A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98E71294-75E4-4797-8312-5B775184F8A0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -78,6 +86,7 @@ Global
 		{E5368B1E-1793-4B00-BFEC-FEB672FD3E17} = {37844B19-1477-467C-B7C0-8D71A187DBF6}
 		{26BEEAF6-5DD7-4D3D-816D-D193FD883504} = {F33F757F-05F8-470C-9C54-134A8915F227}
 		{89CBBC6D-2560-4B60-82F5-8326E25F0D61} = {F33F757F-05F8-470C-9C54-134A8915F227}
+		{98E71294-75E4-4797-8312-5B775184F8A0} = {2B074102-AEFF-40BD-8193-E698DCF0E190}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B86B38C2-90F3-4EA6-85D9-98865E85D12A}

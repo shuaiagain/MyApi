@@ -34,17 +34,27 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 https://www.jenkins.io/doc/book/installing/docker/
 
 14.登录认证(jwt/oauth2.0/session/cookie/sso)
-https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
-https://jwt.io/introduction
-https://github.com/jwt-dotnet/jwt#JwtNet
+	14.1 jwt
+	https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
+	https://jwt.io/introduction
+	https://github.com/jwt-dotnet/jwt#JwtNet
 
-https://www.cnblogs.com/mrbug/p/8022826.html
-https://www.cnblogs.com/xiaobai123/p/9242828.html
-https://www.cnblogs.com/xiaohuochai/p/8440335.html
+	https://www.cnblogs.com/selimsong/p/8184904.html
+	https://www.cnblogs.com/danvic712/p/10331976.html
+	https://www.cnblogs.com/grissom007/p/6294746.html
+	https://www.cnblogs.com/mrbug/p/8022826.html
+	https://www.cnblogs.com/xiaobai123/p/9242828.html
+	https://www.cnblogs.com/xiaohuochai/p/8440335.html
 
-https://www.cnblogs.com/7tiny/p/11012035.html
-https://www.cnblogs.com/laozhang-is-phi/p/10462316.html
-https://www.cnblogs.com/RayWang/p/9255093.html
+	https://www.cnblogs.com/7tiny/p/11012035.html
+	https://www.cnblogs.com/laozhang-is-phi/p/10462316.html
+	https://www.cnblogs.com/RayWang/p/9255093.html
+	14.2 oauth2.0
+	https://www.cnblogs.com/selimsong/p/8037717.html
+	https://www.cnblogs.com/xiaobai123/p/9348074.html
+
+	14.3 ASP.NET Identity 的“多重”身份验证代码篇
+	https://www.cnblogs.com/selimsong/p/7942513.html
 
 15.DDD
 https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
