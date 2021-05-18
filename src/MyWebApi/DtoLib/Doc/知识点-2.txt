@@ -31,3 +31,20 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 12.序列化
 
 13.swagger、jenkins
+https://www.jenkins.io/doc/book/installing/docker/
+
+14.登录认证(jwt/oauth2.0/session/cookie/sso)
+https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
+https://jwt.io/introduction
+https://github.com/jwt-dotnet/jwt#JwtNet
+
+https://www.cnblogs.com/mrbug/p/8022826.html
+https://www.cnblogs.com/xiaobai123/p/9242828.html
+https://www.cnblogs.com/xiaohuochai/p/8440335.html
+
+https://www.cnblogs.com/7tiny/p/11012035.html
+https://www.cnblogs.com/laozhang-is-phi/p/10462316.html
+https://www.cnblogs.com/RayWang/p/9255093.html
+
+15.DDD
+https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
