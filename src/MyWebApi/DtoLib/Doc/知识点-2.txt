@@ -45,16 +45,19 @@ https://www.jenkins.io/doc/book/installing/docker/
 	https://www.cnblogs.com/mrbug/p/8022826.html
 	https://www.cnblogs.com/xiaobai123/p/9242828.html
 	https://www.cnblogs.com/xiaohuochai/p/8440335.html
+	https://www.cnblogs.com/linianhui/p/oauth2-extensions-protocol-and-json-web-token.html
 
 	https://www.cnblogs.com/7tiny/p/11012035.html
 	https://www.cnblogs.com/laozhang-is-phi/p/10462316.html
 	https://www.cnblogs.com/RayWang/p/9255093.html
+
 	14.2 oauth2.0
 	https://www.cnblogs.com/selimsong/p/8037717.html
 	https://www.cnblogs.com/xiaobai123/p/9348074.html
 
 	14.3 ASP.NET Identity 的“多重”身份验证代码篇
 	https://www.cnblogs.com/selimsong/p/7942513.html
+	https://www.cnblogs.com/linianhui/p/oauth2-authorization.html
 
 15.DDD
 https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
