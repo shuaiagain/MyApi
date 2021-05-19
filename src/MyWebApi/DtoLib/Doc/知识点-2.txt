@@ -31,10 +31,17 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 12.序列化
 
 13.swagger、jenkins
-https://www.jenkins.io/doc/book/installing/docker/
+	13.1 jenkins
+	https://www.jenkins.io/doc/book/installing/docker/
+	https://www.cnblogs.com/selimsong/p/9763268.html
 
-14.登录认证(jwt/oauth2.0/session/cookie/sso)
-	14.1 jwt
+14.登录认证(form/identity/jwt/oauth2.0/session/cookie/sso)
+	
+	14.1 form/identity
+	https://www.cnblogs.com/CreateMyself/p/4857799.html#!comments
+	https://www.cnblogs.com/CreateMyself/p/4856133.html
+
+	14.2 jwt
 	https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
 	https://jwt.io/introduction
 	https://github.com/jwt-dotnet/jwt#JwtNet
@@ -51,13 +58,17 @@ https://www.jenkins.io/doc/book/installing/docker/
 	https://www.cnblogs.com/laozhang-is-phi/p/10462316.html
 	https://www.cnblogs.com/RayWang/p/9255093.html
 
-	14.2 oauth2.0
+	14.3 oauth2.0
 	https://www.cnblogs.com/selimsong/p/8037717.html
 	https://www.cnblogs.com/xiaobai123/p/9348074.html
 
-	14.3 ASP.NET Identity 的“多重”身份验证代码篇
+	14.4 ASP.NET Identity 的“多重”身份验证代码篇
 	https://www.cnblogs.com/selimsong/p/7942513.html
 	https://www.cnblogs.com/linianhui/p/oauth2-authorization.html
 
 15.DDD
 https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
+
+16.mvc+ef
+https://www.cnblogs.com/miro/p/4164076.html
+https://www.cnblogs.com/TomXu/p/4496545.html
