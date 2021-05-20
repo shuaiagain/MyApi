@@ -105,6 +105,7 @@
     <Content Include="Doc\Database\table\dbo.Subjects.Table.sql" />
     <Content Include="Doc\Database\table\dbo.SubjectScore.Table.sql" />
     <Content Include="Doc\http协议-1.txt" />
+    <Content Include="Doc\前端切图-1.txt" />
     <Content Include="Doc\前端.txt" />
     <Content Include="Doc\知识点-2.txt" />
     <Content Include="Doc\pointer-reference.txt" />
