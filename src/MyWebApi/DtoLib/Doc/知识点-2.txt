@@ -40,6 +40,7 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 	14.1 form/identity
 	https://www.cnblogs.com/CreateMyself/p/4857799.html#!comments
 	https://www.cnblogs.com/CreateMyself/p/4856133.html
+	https://www.cnblogs.com/selimsong/p/7723827.html
 
 	14.2 jwt
 	https://www.ruanyifeng.com/blog/2018/07/json_web_token-tutorial.html
@@ -66,9 +67,12 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 	https://www.cnblogs.com/selimsong/p/7942513.html
 	https://www.cnblogs.com/linianhui/p/oauth2-authorization.html
 
-15.DDD
+15. DDD
 https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
 
-16.mvc+ef
+16. mvc+ef
 https://www.cnblogs.com/miro/p/4164076.html
 https://www.cnblogs.com/TomXu/p/4496545.html
+
+17.  Katana
+https://docs.microsoft.com/zh-cn/aspnet/aspnet/overview/owin-and-katana/an-overview-of-project-katana
