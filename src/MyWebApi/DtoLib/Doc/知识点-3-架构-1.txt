@@ -1,0 +1,11 @@
+1. DDD
+https://www.cnblogs.com/netfocus/p/5548025.html
+https://www.cnblogs.com/yubaolee/p/OpenAuth.html
+https://www.cnblogs.com/landeanfen/p/4816706.html
+https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/best-practice-an-introduction-to-domain-driven-design
+https://www.cnblogs.com/daxnet/archive/2010/11/02/1867392.html
+https://www.cnblogs.com/netfocus/p/5548025.html
+https://www.cnblogs.com/laozhang-is-phi/p/9832684.html
+https://www.cnblogs.com/netfocus/archive/2011/10/10/2204949.html
+https://www.jianshu.com/p/8e1d8987b3c1
+https://www.cnblogs.com/laozhang-is-phi/p/9832684.html

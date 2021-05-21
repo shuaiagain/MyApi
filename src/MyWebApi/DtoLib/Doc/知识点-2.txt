@@ -67,12 +67,9 @@ https://www.cnblogs.com/skynet/archive/2011/05/03/2035105.html
 	https://www.cnblogs.com/selimsong/p/7942513.html
 	https://www.cnblogs.com/linianhui/p/oauth2-authorization.html
 
-15. DDD
-https://www.cnblogs.com/laozhang-is-phi/p/9806335.html
-
-16. mvc+ef
+15. mvc+ef
 https://www.cnblogs.com/miro/p/4164076.html
 https://www.cnblogs.com/TomXu/p/4496545.html
 
-17.  Katana
+16.  Katana
 https://docs.microsoft.com/zh-cn/aspnet/aspnet/overview/owin-and-katana/an-overview-of-project-katana
