@@ -9,3 +9,14 @@ https://www.cnblogs.com/laozhang-is-phi/p/9832684.html
 https://www.cnblogs.com/netfocus/archive/2011/10/10/2204949.html
 https://www.jianshu.com/p/8e1d8987b3c1
 https://www.cnblogs.com/laozhang-is-phi/p/9832684.html
+
+2..net Core
+	https://docs.microsoft.com/zh-cn/dotnet/fundamentals/?WT.mc_id=DOP-MVP-5003704
+	沙盒学习指南:  免费环境
+	https://docs.microsoft.com/zh-cn/learn/browse/?expanded=dotnet%2Cvs&products=dotnet&WT.mc_id=DOP-MVP-5003704
+	教程1
+	https://www.cnblogs.com/laozhang-is-phi/p/all-knowledge-for-netcore.html
+	教程2
+	https://www.cnblogs.com/zhao123/p/12201928.html
+	视频学习
+	https://www.bilibili.com/video/BV1vC4y1p7Za?p=14
