@@ -52,7 +52,16 @@ namespace DtoLib.Example
                 else
                 {
                     client = new WebClient();
+
                     localAwaiter = client.DownloadStringTaskAsync(new Uri("https://kaifa.baidu.com/")).GetAwaiter();
+                    if (!localAwaiter.IsCompleted)
+                    {
+                        num = state = 0;
+                        awaiter = localAwaiter;
+                        stateMachine = this;
+                        builder.AwaitUnsafeOnCompleted();
+                        return;
+                    }
                 }
             }
             catch (Exception ex)
