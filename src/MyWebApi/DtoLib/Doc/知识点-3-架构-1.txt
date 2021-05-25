@@ -14,9 +14,19 @@ https://www.cnblogs.com/laozhang-is-phi/p/9832684.html
 	https://docs.microsoft.com/zh-cn/dotnet/fundamentals/?WT.mc_id=DOP-MVP-5003704
 	沙盒学习指南:  免费环境
 	https://docs.microsoft.com/zh-cn/learn/browse/?expanded=dotnet%2Cvs&products=dotnet&WT.mc_id=DOP-MVP-5003704
+	
 	教程1
 	https://www.cnblogs.com/laozhang-is-phi/p/all-knowledge-for-netcore.html
+
 	教程2
 	https://www.cnblogs.com/zhao123/p/12201928.html
 	视频学习
 	https://www.bilibili.com/video/BV1vC4y1p7Za?p=14
+
+	 ASP.NET Core 的授权策略
+	https://www.cnblogs.com/RainingNight/p/hosting-in-asp-net-core.html
+	https://andrewlock.net/introduction-to-authentication-with-asp-net-core/
+
+3.ASP.NET Core 实战
+https://www.cnblogs.com/danvic712/p/10331976.html
+

@@ -13,12 +13,18 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            StreamExt5.Print();
+            #region async/await
+            AsyncAwaitA.Print(); 
+            #endregion
+
+            #region stream
+            //StreamExt5.Print();
             //StreamExt4.Print();
             //StreamExt3.Print();
             //StreamExt2.Print();
             //StreamExt.Print();
-            //ReflectionPractice.Print();
+            //ReflectionPractice.Print(); 
+            #endregion
 
             #region 2
             //Dictionary_Condictionary.Print();

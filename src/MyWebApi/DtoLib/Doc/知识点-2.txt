@@ -14,8 +14,20 @@ https://www.cnblogs.com/knowledgesea/archive/2013/03/02/2935920.html
 	https://www.cnblogs.com/vincentfu/p/5793177.html
 
 6.状态机，async,await,yield
+	https://www.cnblogs.com/huangxincheng/p/13558006.html
 	https://www.cnblogs.com/yilezhu/p/10555849.html
+	https://www.cnblogs.com/ryzen/p/13938188.html
+	https://www.cnblogs.com/brookshi/p/5240510.html
 	https://www.cnblogs.com/landeanfen/p/4734252.html
+	https://www.cnblogs.com/landeanfen/p/4734252.html
+
+		6..2原理：
+	https://www.cnblogs.com/brookshi/p/5240510.html
+	https://blog.csdn.net/lindexi_gd/article/details/100174692
+	https://www.cnblogs.com/heyuquan/archive/2013/04/26/3045827.html
+	https://www.cnblogs.com/johnyong/p/14089110.html
+	https://blog.stephencleary.com/2013/11/there-is-no-thread.html
+
 7.构造函数
 8.hashset,hashmap,hashtable,dictionary,mecache
 9.DBNull.Value和Null的用法和区别
