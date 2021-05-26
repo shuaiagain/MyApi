@@ -1,4 +1,9 @@
-1.viewport
-	https://www.cnblogs.com/2050/p/3877280.html
-2.CSS布局奇淫技巧之--各种居中
-https://www.cnblogs.com/2050/p/3392803.html
+1.官网
+	https://cn.vuejs.org/
+
+2.demo
+	手摸手，带你用vue撸后台 
+	https://juejin.cn/post/6844903476661583880
+
+3.vue技术揭秘
+	https://ustbhuangyi.github.io/vue-analysis/v2/prepare/
