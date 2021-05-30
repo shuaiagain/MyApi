@@ -1,4 +1,16 @@
-1.viewport
+.BFC
+	https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context
+.viewport
 	https://www.cnblogs.com/2050/p/3877280.html
-2.CSS布局奇淫技巧之--各种居中
-https://www.cnblogs.com/2050/p/3392803.html
+.CSS布局奇淫技巧之--各种居中
+	https://www.cnblogs.com/2050/p/3392803.html
+.前端基础篇之CSS世界
+	https://juejin.cn/post/6844903894313598989
+.清除浮动的四种方式及其原理理解
+	https://juejin.cn/post/6844903504545316877
+	clear:both
+	BFC/haslayout(用于ie6/ie7zoom)
+
+.CSS经典面试题
+	https://juejin.cn/post/6844903832552472583
+	https://juejin.cn/post/6844903776512393224
