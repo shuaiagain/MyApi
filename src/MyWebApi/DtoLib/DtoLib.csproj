@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enum\LevelEnum.cs" />
+    <Compile Include="Example\AsyncAwaitC.cs" />
+    <Compile Include="Example\AsyncAwaitB.cs" />
     <Compile Include="Example\DictionaryExt.cs" />
     <Compile Include="Example\Dictionary_Condictionary.cs" />
     <Compile Include="Example\AbstractInterface.cs" />

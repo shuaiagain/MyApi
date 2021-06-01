@@ -1,0 +1,9 @@
+1.SQL Server 查询处理中的各个阶段(SQL执行顺序)
+https://www.cnblogs.com/summer_adai/archive/2011/10/28/2227605.html
+https://www.cnblogs.com/yyjie/p/7788428.html
+
+2.ID发号器
+
+3.数据库索引及基本优化入门
+https://www.cnblogs.com/anding/p/3254674.html
+https://www.cnblogs.com/lyhabc/p/3196479.html

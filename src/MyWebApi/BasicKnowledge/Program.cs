@@ -14,7 +14,11 @@ namespace BasicKnowledge
         static void Main(string[] args)
         {
             #region async/await
-            AsyncAwaitA.Print(); 
+            AsyncAwaitC.Print();
+
+            //AsyncAwaitB.Print();
+
+            //AsyncAwaitA.Print();
             #endregion
 
             #region stream

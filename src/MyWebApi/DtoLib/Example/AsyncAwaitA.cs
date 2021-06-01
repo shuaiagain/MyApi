@@ -39,10 +39,6 @@ namespace DtoLib.Example
             WebClient client = new WebClient();
             string uri = "https://kaifa.baidu.com/";
             string content = await client.DownloadStringTaskAsync(new Uri(uri));
-            for (int i = 0; i < int.MaxValue/100; i++)
-            {
-
-            }
 
             Console.WriteLine("异步方法结束");
             return content;
