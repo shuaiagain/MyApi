@@ -1,2 +1,9 @@
 1.log4
 https://www.cnblogs.com/laozhang-is-phi/p/9855836.html
+2.AutoMapper
+http://automapper.org/	
+https://docs.automapper.org/en/latest/
+
+https://www.cnblogs.com/fred-bao/p/5700776.html
+https://www.cnblogs.com/farb/p/AutoMapperContent.html
+https://www.cnblogs.com/youring2/p/automapper.html

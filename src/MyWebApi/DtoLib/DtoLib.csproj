@@ -31,6 +31,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AutoMapper, Version=10.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.10.1.1\lib\net461\AutoMapper.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
@@ -43,9 +46,14 @@
     <Reference Include="System.Xml.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config\MapperExt.cs" />
+    <Compile Include="Config\OrganizationProfile.cs" />
+    <Compile Include="Dto\ThreeDto.cs" />
+    <Compile Include="Entity\ThreeEntity.cs" />
     <Compile Include="Enum\LevelEnum.cs" />
     <Compile Include="Example\AsyncAwaitC.cs" />
     <Compile Include="Example\AsyncAwaitB.cs" />
+    <Compile Include="Example\AutoMapperExt.cs" />
     <Compile Include="Example\DictionaryExt.cs" />
     <Compile Include="Example\Dictionary_Condictionary.cs" />
     <Compile Include="Example\AbstractInterface.cs" />
@@ -123,6 +131,9 @@
     <Content Include="File\FileFileCreate.txt" />
     <Content Include="File\TextReader2.txt" />
     <Content Include="File\TextReader.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

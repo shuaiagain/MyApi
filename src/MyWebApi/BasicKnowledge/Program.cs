@@ -13,8 +13,10 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
+           AutoMapperExt.Print();
+
             #region async/await
-            AsyncAwaitC.Print();
+            //AsyncAwaitC.Print();
 
             //AsyncAwaitB.Print();
 
