@@ -30,9 +30,15 @@ namespace DtoLib.Config
         }
         #endregion
 
-        public static List<TDestination> MapToList<TSource, TDestination>() where TSource:class,IEnumerable where TDestination :class,IEnumerable
+        public static List<TDestination> MapToList<TSource, TDestination>(object[] source) where TSource : class where TDestination : class
         {
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<TSource, TDestination>();
+            });
 
+            IMapper mapper = config.CreateMapper();
+            return mapper.Map<List<TDestination>>(source);
         }
     }
 }

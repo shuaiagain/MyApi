@@ -8,12 +8,24 @@ namespace DtoLib.Entity
 {
     public class ThreeEntity
     {
-        public int Id { get; set; }
+        public int Id;
 
-        public string Name { get; set; }
+        public string EntityName;
 
         public int Age { get; set; }
 
         public decimal Height { get; set; }
+
+        private string sex;
+        public string Sex
+        {
+            get { return sex; }
+            private set { sex = value; }
+        }
+
+        public decimal Weight;
+
+        public decimal Hand { get; set; }
     }
+
 }

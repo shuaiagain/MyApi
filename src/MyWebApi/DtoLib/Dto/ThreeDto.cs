@@ -8,10 +8,20 @@ namespace DtoLib.Dto
 {
     public class ThreeDto
     {
-        public int Id { get; set; }
+        public int ID;
 
-        public string Name { get; set; }
+        public string entityName;
+
+        public string Entity_Name;
 
         public int Age { get; set; }
+
+        private decimal Height = 1;
+
+        public string Sex { get; private set; }
+
+        public decimal Weight;
+
+        public decimal PrefixHandPostfix { get; set; }
     }
 }
