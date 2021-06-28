@@ -118,6 +118,7 @@
     <Content Include="Doc\Database\数据库-1.txt" />
     <Content Include="Doc\http协议-1.txt" />
     <Content Include="Doc\images\CLR-1.png" />
+    <Content Include="Doc\images\CLR-2.png" />
     <Content Include="Doc\前端-4-题目.txt" />
     <Content Include="Doc\前端-3-vue.txt" />
     <Content Include="Doc\前端-2-切图-1.txt" />
@@ -136,6 +137,7 @@
     <Content Include="File\TextReader.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Doc\images\CLR.vsdx" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

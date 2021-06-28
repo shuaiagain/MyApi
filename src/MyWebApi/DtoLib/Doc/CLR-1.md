@@ -4,3 +4,5 @@
 ### [MSCorEE.dll](https://www.cnblogs.com/jasenkin/archive/2010/10/20/asp-net-clr-relation.html)
 ### [CLR寄宿(上) MSCOREE.DLL](https://www.cnblogs.com/xuanhun/archive/2012/06/23/2559295.html)
 ### [托管代码的进程注入&CLR宿主](https://www.cnblogs.com/xuanhun/archive/2012/07/22/2603983.html)
+
+### [基础知识梳理系列索引](https://www.cnblogs.com/solan/archive/2012/07/23/CSharp00.html)
