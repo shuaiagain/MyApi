@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Collections.Generic;
 using AutoMapper;
 using DtoLib.Config;
 using DtoLib.Dto;
@@ -15,7 +15,10 @@ namespace DtoLib.Example
     {
         public static void Print()
         {
-            ExampleH();
+            ExampleK();
+            //ExampleJ();
+            //ExampleI();
+            //ExampleH();
             //ExampleG();
             //ExampleF();
             //ExampleE();
@@ -25,9 +28,158 @@ namespace DtoLib.Example
             //ExampleA();
         }
 
-        #region 6. 替换字符
+        #region 11. 自定义映射-important
         /// <summary>
-        /// 替换字符
+        /// 自定义映射
+        /// 当源类型与目标类型名称不一致时，或者需要对源数据做一些转换时，可以用自定义映射。
+        /// </summary>
+        private static void ExampleK()
+        {
+            FourDto dto = new FourDto { Id = 1, Name = "name-1" };
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<FourDto, FourEntity>()
+                     .ForMember(t => t.EntityId, s => s.MapFrom(i => i.Id))
+                     .ForMember(t => t.EntityName, s => s.MapFrom(i => i.Name));
+            });
+
+            IMapper mapper = config.CreateMapper();
+            var entity = mapper.Map<FourEntity>(dto);
+
+            Console.WriteLine("id = {0}，name = {1}", entity.EntityId, entity.EntityName);
+        }
+        #endregion
+
+
+        #region 10. 自定义映射-important
+        /// <summary>
+        /// 自定义映射
+        /// 当源类型与目标类型名称不一致时，或者需要对源数据做一些转换时，可以用自定义映射。
+        /// </summary>
+        private static void ExampleK()
+        {
+            FourDto dto = new FourDto { Id = 1, Name = "name-1" };
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.CreateMap<FourDto, FourEntity>()
+                     .ForMember(t => t.EntityId, s => s.MapFrom(i => i.Id))
+                     .ForMember(t => t.EntityName, s => s.MapFrom(i => i.Name));
+            });
+
+            IMapper mapper = config.CreateMapper();
+            var entity = mapper.Map<FourEntity>(dto);
+
+            Console.WriteLine("id = {0}，name = {1}", entity.EntityId, entity.EntityName);
+        }
+        #endregion
+
+        #region 9. 嵌套
+        /// <summary>
+        /// 嵌套
+        /// </summary>
+        private static void ExampleJ()
+        {
+            ThreeDto a = new ThreeDto()
+            {
+                ID = 1,
+                entityName = "name-1"
+            };
+
+            ThreeDto aSub = new ThreeDto()
+            {
+                ID = 11,
+                entityName = "name-1-sub"
+            };
+            a.Children = new List<ThreeDto>() { aSub };
+
+            var entity = MapperExt.MapTo<ThreeDto, ThreeEntity>(a);
+            Console.WriteLine("Id = {0},EntityName = {1}", entity.Id, entity.EntityName);
+            foreach (var item in entity.Children)
+            {
+                Console.WriteLine("Id = {0},EntityName = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("--------------------");
+
+            ThreeDto[] arr = new ThreeDto[] {
+                new ThreeDto{
+                    ID = 1,
+                    entityName = "name-1",
+                    PrefixHandPostfix=100
+                },
+                new ThreeDto{
+                    ID = 2,
+                    entityName = "name-2",
+                    PrefixHandPostfix=200
+                }
+            };
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.RecognizePrefixes("Prefix");
+                cfg.RecognizePostfixes("Postfix");
+
+                //全局属性/字段过滤
+                cfg.CreateMap<ThreeDto, ThreeEntity>();
+            });
+
+            //config.AssertConfigurationIsValid();
+
+            var list = MapperExt.MapToList<ThreeDto, ThreeEntity>(arr);
+            foreach (var item in list)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.Hand);
+            }
+        }
+        #endregion
+
+        #region 8. 封装的静态方法
+        /// <summary>
+        /// 数组和列表映射
+        /// </summary>
+        private static void ExampleI()
+        {
+            ThreeDto a = new ThreeDto()
+            {
+                ID = 1,
+                entityName = "name-1"
+            };
+
+            var entity = MapperExt.MapTo<ThreeDto, ThreeEntity>(a);
+            Console.WriteLine("Id = {0},EntityName = {1}", entity.Id, entity.EntityName);
+
+            ThreeDto[] arr = new ThreeDto[] {
+                new ThreeDto{
+                    ID = 1,
+                    entityName = "name-1",
+                    PrefixHandPostfix=100
+                },
+                new ThreeDto{
+                    ID = 2,
+                    entityName = "name-2",
+                    PrefixHandPostfix=200
+                }
+            };
+
+            var config = new MapperConfiguration(cfg =>
+            {
+                cfg.RecognizePrefixes("Prefix");
+                cfg.RecognizePostfixes("Postfix");
+
+                //全局属性/字段过滤
+                cfg.CreateMap<ThreeDto, ThreeEntity>();
+            });
+
+            var list = MapperExt.MapToList<ThreeDto, ThreeEntity>(arr);
+            foreach (var item in list)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.Hand);
+            }
+        }
+        #endregion
+
+        #region 7. 数组和列表映射
+        /// <summary>
+        /// 数组和列表映射
         /// </summary>
         private static void ExampleH()
         {
@@ -48,21 +200,60 @@ namespace DtoLib.Example
                 }
             };
 
+
             var config = new MapperConfiguration(cfg =>
             {
                 //全局属性/字段过滤
                 cfg.CreateMap<ThreeDto, ThreeEntity>();
             });
 
+            var list = MapperExt.MapToList<ThreeDto, ThreeEntity>(arr);
+            foreach (var item in list)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("--------new-------");
 
             IMapper maper = config.CreateMapper();
-
             //IEnumerable<Destination> ienumerableDest = mapper.Map<Source[], IEnumerable<Destination>>(sources);
             //ICollection<Destination> icollectionDest = mapper.Map<Source[], ICollection<Destination>>(sources);
             //IList<Destination> ilistDest = mapper.Map<Source[], IList<Destination>>(sources);
             //List<Destination> listDest = mapper.Map<Source[], List<Destination>>(sources);
             //Destination[] arrayDest = mapper.Map<Source[], Destination[]>(sources);
 
+            //转为IEnumerable
+            IEnumerable<ThreeEntity> arrIEnumerable = maper.Map<ThreeDto[], IEnumerable<ThreeEntity>>(arr);
+            foreach (var item in arrIEnumerable)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("----------------");
+
+            //转为ICollection
+            ICollection<ThreeEntity> arrICollection = maper.Map<ThreeDto[], ICollection<ThreeEntity>>(arr);
+            foreach (var item in arrICollection)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("----------------");
+
+            //转为IList
+            IList<ThreeEntity> arrIList = maper.Map<ThreeDto[], IList<ThreeEntity>>(arr);
+            foreach (var item in arrIList)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("----------------");
+
+            //转为集合
+            List<ThreeEntity> arrList = maper.Map<ThreeDto[], List<ThreeEntity>>(arr);
+            foreach (var item in arrList)
+            {
+                Console.WriteLine("Id = {0},Hand = {1}", item.Id, item.EntityName);
+            }
+            Console.WriteLine("----------------");
+
+            //转为数组
             ThreeEntity[] arrT = maper.Map<ThreeDto[], ThreeEntity[]>(arr);
             foreach (var item in arrT)
             {

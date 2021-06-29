@@ -26,6 +26,8 @@ namespace DtoLib.Entity
         public decimal Weight;
 
         public decimal Hand { get; set; }
+
+        public List<ThreeEntity> Children { get; set; }
     }
 
 }

@@ -23,5 +23,7 @@ namespace DtoLib.Dto
         public decimal Weight;
 
         public decimal PrefixHandPostfix { get; set; }
+
+        public List<ThreeDto> Children { get; set; }
     }
 }

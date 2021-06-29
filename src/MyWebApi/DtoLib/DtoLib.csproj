@@ -48,7 +48,9 @@
   <ItemGroup>
     <Compile Include="Config\MapperExt.cs" />
     <Compile Include="Config\OrganizationProfile.cs" />
+    <Compile Include="Dto\FourDto.cs" />
     <Compile Include="Dto\ThreeDto.cs" />
+    <Compile Include="Entity\FourEntity.cs" />
     <Compile Include="Entity\ThreeEntity.cs" />
     <Compile Include="Enum\LevelEnum.cs" />
     <Compile Include="Example\AsyncAwaitC.cs" />
