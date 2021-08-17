@@ -33,7 +33,7 @@ namespace DtoLib.Example
         /// 自定义映射
         /// 当源类型与目标类型名称不一致时，或者需要对源数据做一些转换时，可以用自定义映射。
         /// </summary>
-        private static void ExampleK()
+        private static void ExampleL()
         {
             FourDto dto = new FourDto { Id = 1, Name = "name-1" };
             var config = new MapperConfiguration(cfg =>
