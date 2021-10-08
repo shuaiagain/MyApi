@@ -13,7 +13,7 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-           AutoMapperExt.Print();
+            AutoMapperExt.Print();
 
             #region async/await
             //AsyncAwaitC.Print();
@@ -109,7 +109,7 @@ namespace BasicKnowledge
 
             //EqualsGetHashCode.Print();
             //PointerType.Print();
-            //DefaultExt.Print();
+            DefaultExt.Print();
             //IEnumeratorExt.Print();
             //ExpressionTree.Print(); 
             #endregion
