@@ -1,5 +1,6 @@
 ﻿using BasicKnowledge.Dal;
 using DtoLib.Example;
+using DtoLib.LeetCode;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +14,11 @@ namespace BasicKnowledge
     {
         static void Main(string[] args)
         {
-            AutoMapperExt.Print();
+            ReverseWord.AA();
+            //var sum = TwoSum.Sum(new int[] { 1, 2, 7,8, 5 }, 7);
+            //Console.WriteLine("result={0},{1}",sum[0],sum[1]);
+
+            //AutoMapperExt.Print();
 
             #region async/await
             //AsyncAwaitC.Print();

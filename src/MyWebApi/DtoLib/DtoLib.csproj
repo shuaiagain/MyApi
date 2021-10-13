@@ -101,6 +101,8 @@
     <Compile Include="Example\TypeSafe.cs" />
     <Compile Include="Example\ValueTypes.cs" />
     <Compile Include="Example\VolatileYield.cs" />
+    <Compile Include="LeetCode\3.ReverseWord.cs" />
+    <Compile Include="LeetCode\1.TwoSum.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Example\TaskBasicOperate.cs" />
     <Compile Include="Example\ThreeTaskOperate.cs" />
@@ -117,7 +119,7 @@
     <Content Include="Doc\Database\table\dbo.Student.Table.sql" />
     <Content Include="Doc\Database\table\dbo.Subjects.Table.sql" />
     <Content Include="Doc\Database\table\dbo.SubjectScore.Table.sql" />
-    <Content Include="Doc\Database\数据库-1.txt" />
+    <Content Include="Doc\数据库-2.txt" />
     <Content Include="Doc\http协议-1.txt" />
     <Content Include="Doc\images\CLR-1.png" />
     <Content Include="Doc\images\CLR-2.png" />
